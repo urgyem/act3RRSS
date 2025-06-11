@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada de Puertas Abiertas - Colegio Arboleda</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS for theme colors -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Definiendo colores personalizados para Tailwind */
+        .bg-arboleda-blue { background-color: #0A2342; }
+        .bg-arboleda-gold { background-color: #D9A404; }
+        .bg-arboleda-light { background-color: #F8F7F2; }
+        .text-arboleda-blue { color: #0A2342; }
+        .text-arboleda-gold { color: #D9A404; }
+        .border-arboleda-gold { border-color: #D9A404; }
+        .hover\:bg-arboleda-gold-dark:hover { background-color: #b98d03; }
+    </style>
+</head>
+<body class="bg-arboleda-light text-gray-800">
+
+    <!-- Header Section -->
+    <header class="relative text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://i.postimg.cc/SsS8Kgfr/Portada.png" 
+                 alt="[Imagen de niños sonriendo y colaborando en el patio del colegio Arboleda]" 
+                 class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-32 lg:py-40 text-center">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
+                Descubre un colegio donde <span class="text-arboleda-gold">crecer es una aventura.</span>
+            </h1>
+            <p class="mt-6 text-xl md:text-2xl max-w-3xl mx-auto">
+                Jornada de Puertas Abiertas en el Colegio Arboleda. Ven a conocer tu futuro colegio.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 text-lg">
+                <div class="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <i data-lucide="calendar-days" class="w-5 h-5 text-arboleda-gold"></i>
+                    <span>Sábado, 15 de junio de 2025</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <i data-lucide="clock" class="w-5 h-5 text-arboleda-gold"></i>
+                    <span>11:00 horas</span>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="#formulario" class="inline-block bg-arboleda-gold text-white font-bold text-lg px-10 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:bg-arboleda-gold-dark">
+                    ¡QUIERO INSCRIBIRME AHORA!
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-arboleda-blue">
+                    Más que un colegio, una comunidad
+                </h2>
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                    El Colegio Arboleda nació en 2008 del sueño de familias y docentes que buscaban una educación innovadora y cercana. Aquí, el aprendizaje por proyectos, el bilingüismo real y la educación emocional no son extras, son el centro de todo. Creemos en la autonomía, la creatividad y en un entorno donde cada niño y niña brilla con luz propia.
+                </p>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="actividades" class="py-16 md:py-24 bg-arboleda-light">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-arboleda-blue">No te lo contaremos, ¡lo vivirás!</h2>
+                    <p class="mt-4 text-lg text-gray-600">Estas son algunas de las experiencias que hemos preparado para vosotros:</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Activity 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-arboleda-gold p-4 rounded-full">
+                            <i data-lucide="cubes" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-arboleda-blue">Taller "Pequeños Arquitectos"</h3>
+                        <p class="mt-4 text-gray-600">
+                            Participa con tus hijos en un mini-proyecto de construcción creativa. Experimentaréis de primera mano cómo funciona nuestro aprendizaje basado en proyectos (ABP) y los materiales de inspiración Montessori.
+                        </p>
+                    </div>
+                    <!-- Activity 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-arboleda-gold p-4 rounded-full">
+                            <i data-lucide="sprout" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-arboleda-blue">"Exploradores del Huerto"</h3>
+                        <p class="mt-4 text-gray-600">
+                           Descubrid los secretos de nuestro huerto escolar. Plantaréis vuestra propia lechuga en un semillero que podréis llevaros a casa como muestra de nuestro proyecto 'Aula Viva'.
+                        </p>
+                    </div>
+                    <!-- Activity 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-arboleda-gold p-4 rounded-full">
+                            <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-bold text-arboleda-blue">Storytelling Interactivo Bilingüe</h3>
+                        <p class="mt-4 text-gray-600">
+                            Asiste a una sesión de cuentacuentos dinámica con nuestros auxiliares de conversación nativos. Verás cómo integramos el inglés de forma natural y divertida en el día a día.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeria" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-arboleda-blue">Un vistazo a nuestro espacio</h2>
+                    <p class="mt-4 text-lg text-gray-600">Instalaciones luminosas y seguras, diseñadas para inspirar el aprendizaje.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="col-span-1 md:col-span-1">
+                        <img src="https://i.postimg.cc/tCwhzt9q/Aula-infantil.png" alt="[Imagen de un aula de infantil luminosa y con materiales pedagógicos]" class="w-full h-full object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <img src="https://i.postimg.cc/DzdLF9L0/Patio.png" alt="[Imagen del patio con estructuras de juego no convencionales]" class="w-full h-full object-cover rounded-lg shadow-md">
+                    </div>
+                     <div class="col-span-1 md:col-span-2">
+                        <img src="https://i.postimg.cc/g2h3tX0v/Biblioteca.png" alt="[Imagen de la biblioteca del colegio con niños leyendo]" class="w-full h-full object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="col-span-1 md:col-span-1">
+                        <img src="https://i.postimg.cc/43TVDfKj/Huerto.png" alt="[Imagen del huerto escolar gestionado por alumnos]" class="w-full h-full object-cover rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map and Directions Section -->
+        <section id="ubicacion" class="py-16 md:py-24 bg-arboleda-light">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-arboleda-blue">Encuéntranos en el corazón de Hortaleza</h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Estamos ubicados en una zona tranquila y bien comunicada, ideal para el desarrollo de nuestros alumnos.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <p class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-arboleda-gold flex-shrink-0 mt-1"></i>
+                                <span><strong>Dirección:</strong><br>Calle de la Arboleda Ficticia, 12<br>28043, Hortaleza, Madrid</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i data-lucide="tram-front" class="w-6 h-6 text-arboleda-gold flex-shrink-0"></i>
+                                <span><strong>Metro:</strong> Estación Pinar del Rey (Línea 8) a 10 min.</span>
+                            </p>
+                             <p class="flex items-center gap-3">
+                                <i data-lucide="bus" class="w-6 h-6 text-arboleda-gold flex-shrink-0"></i>
+                                <span><strong>Autobús:</strong> Líneas 9, 72 y 125.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-80 md:h-96 w-full rounded-xl overflow-hidden shadow-2xl">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12136.035489748616!2d-3.6491747805297836!3d40.47481513292415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422ed60f11d13f%3A0x6b72e50559a4c80a!2sHortaleza%2C%20Madrid!5e0!3m2!1ses!2ses!4v1678886450123!5m2!1ses!2ses" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="formulario" class="py-16 md:py-24 bg-white">
+            <div class="max-w-2xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-arboleda-blue">¡No te quedes sin tu plaza!</h2>
+                <p class="mt-4 text-lg text-gray-600">El aforo es limitado. Rellena el formulario para reservar vuestra visita a la Jornada de Puertas Abiertas. Recibirás un email de confirmación.</p>
+                <form action="#" method="POST" class="mt-10 text-left space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre y Apellidos</label>
+                        <input type="text" id="nombre" name="nombre" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-arboleda-gold focus:border-arboleda-gold">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-arboleda-gold focus:border-arboleda-gold">
+                    </div>
+                     <div>
+                        <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-arboleda-gold focus:border-arboleda-gold">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                           <label for="adultos" class="block text-sm font-medium text-gray-700">Nº de adultos</label>
+                           <input type="number" id="adultos" name="adultos" min="1" value="1" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-arboleda-gold focus:border-arboleda-gold">
+                        </div>
+                         <div>
+                           <label for="ninos" class="block text-sm font-medium text-gray-700">Nº de niños/as</label>
+                           <input type="number" id="ninos" name="ninos" min="0" value="0" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-arboleda-gold focus:border-arboleda-gold">
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <input id="privacy" name="privacy" type="checkbox" required class="h-4 w-4 mt-1 text-arboleda-gold border-gray-300 rounded focus:ring-arboleda-gold">
+                        <label for="privacy" class="ml-2 block text-sm text-gray-700">He leído y acepto la <a href="#" class="font-medium text-arboleda-blue hover:underline">política de privacidad</a>.</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-arboleda-gold text-white font-bold text-lg px-10 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:bg-arboleda-gold-dark">
+                           RESERVAR MI PLAZA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-arboleda-blue text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center">
+            <p class="font-bold text-xl">Colegio Arboleda</p>
+            <p class="mt-2 text-gray-300">Calle de la Arboleda Ficticia, 12, 28043, Madrid</p>
+            <p class="mt-1 text-gray-300">secretaria@colegioarboleda.edu &middot; 91 123 45 67</p>
+            <p class="mt-6 text-sm text-gray-400">&copy; 2025 Colegio Arboleda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script to activate Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
